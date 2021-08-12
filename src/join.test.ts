@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
-
 import join from './join';
 
 test('joins an array of strings with the provided seperator', () => {

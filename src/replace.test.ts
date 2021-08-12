@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
-
 import replace from './replace';
 
 test('replaces all matching patterns in the supplied string', () => {
