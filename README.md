@@ -18,6 +18,22 @@ Used to build a function that will join the supplied array of strings together u
 
 Used to build a function that will replace the supplied `pattern` with the `replacement` string. Functionally identical to `String.prototype.replace()`.
 
+### `isEmpty: (input: string | Record<any, any> | any[]) => boolean`
+
+Determines whether the suppied string, object or array is empty, eg. `''`, `[]`, or `{}` respectively.
+
+### `notEmpty: (input: string | Record<any, any> | any[]) => boolean`
+
+Complement of `isEmpty`.
+
+### `notEquals: (a: any, b: any) => boolean`
+
+Determines whether the two supplied objects are not strictly equal (using `!==`).
+
+### `notNil: (input: any) => boolean`
+
+Determines whether the supplied input is not `null` or `undefined`.
+
 ### `collapse: (input: string | string[]) => string`
 
 Takes a string or an array of strings consisting of newlines, tabs, and/or multiple spaces and returns a single collapsed string with only one space between each "word".
