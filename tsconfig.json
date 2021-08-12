@@ -1,15 +1,16 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "strictNullChecks": true,
-    "target": "es5",
-    "outDir": "dist",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "lib": ["es2015", "dom"],
-    "rootDir": "src",
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+	"compilerOptions": {
+		"declaration": true,
+		"strictNullChecks": true,
+		"target": "es5",
+		"outDir": "./dist",
+		"module": "esnext",
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"lib": ["es6", "es2017.object"],
+		"rootDir": "src",
+		"skipLibCheck": true,
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "dist"]
 }

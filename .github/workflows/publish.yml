@@ -30,7 +30,7 @@ jobs:
         with:
             token: ${{ secrets.CODECOV_TOKEN }}
       - name: Build package
-        run: npm run build
+        run: ./scripts/build.sh
       - name: Publish package
         run: npm publish --access public
         env:
