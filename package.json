@@ -1,0 +1,54 @@
+{
+	"name": "@growthops/ext-ts",
+	"version": "0.0.0",
+	"description": "TypeScript utility library for the GO Digital modern stack",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"test": "jest",
+		"release": "standard-version",
+		"lint": "xo",
+		"cz": "cz"
+	},
+	"xo": {
+		"envs": [
+			"browser",
+			"node",
+			"jest"
+		],
+		"rules": {
+			"unicorn/no-array-callback-reference": 0,
+			"newline-before-return": 2
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/growthops-digital/ext-ts.git"
+	},
+	"peerDependencies": {
+		"remeda": "0.0.30"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.0.0",
+		"commitizen": "^4.2.4",
+		"cz-conventional-changelog": "^3.3.0",
+		"remeda": "0.0.30",
+		"standard-version": "^9.3.1",
+		"ts-jest": "^27.0.4",
+		"typescript": "^4.3.5",
+		"xo": "^0.44.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"dependencies": {
+		"jest": "^27.0.6"
+	}
+}
