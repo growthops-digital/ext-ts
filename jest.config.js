@@ -8,6 +8,10 @@ const config = {
 	modulePathIgnorePatterns: [
 		'<rootDir>/.next/',
 	],
+	testPathIgnorePatterns: [
+		'/node_modules/',
+		'/dist/',
+	],
 };
 
 // eslint-disable-next-line unicorn/prefer-module
