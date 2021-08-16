@@ -24,7 +24,7 @@ jobs:
         with:
           xo: true
       - name: Run tests
-        run: npm run test -- --coverage
+        run: npm run test
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         with:

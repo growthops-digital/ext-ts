@@ -12,7 +12,7 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "tsc",
-		"test": "jest",
+		"test": "jest --coverage",
 		"release": "standard-version",
 		"lint": "xo",
 		"cz": "cz"
