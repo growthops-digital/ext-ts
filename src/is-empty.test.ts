@@ -47,3 +47,19 @@ test('non-empty object', () => {
 
 	expect(result).toBe(false);
 });
+
+test('non-empty arbitrary — number', () => {
+	const input = 0;
+
+	const result = isEmpty(input);
+
+	expect(result).toBe(false);
+});
+
+test('non-empty arbitrary — boolean', () => {
+	const input = false;
+
+	const result = isEmpty(input);
+
+	expect(result).toBe(false);
+});
