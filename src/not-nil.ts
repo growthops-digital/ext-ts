@@ -1,5 +1,5 @@
-import {isNil} from 'remeda';
+import {isNil, isNot} from 'remeda';
 
-const notNil = (input: any): boolean => !isNil(input);
+const notNil = isNot(isNil);
 
 export default notNil;

@@ -1,6 +1,6 @@
+import {isNot} from 'remeda';
 import isEmpty from './is-empty';
-import type {Emptiable} from './is-empty';
 
-const notEmpty = (input: Emptiable) => !isEmpty(input);
+const notEmpty = isNot(isEmpty);
 
 export default notEmpty;
