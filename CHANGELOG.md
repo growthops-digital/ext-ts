@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/growthops-digital/ext-ts/compare/v1.2.1...v1.3.0) (2021-08-16)
+
+
+### Features
+
+* convert isEmpty function to guard clause ([8908849](https://github.com/growthops-digital/ext-ts/commit/8908849e40b00f7a1b9e45348e4b73e9f36b17ba))
+* update notEquals function to support data-first and data-last implementations ([3ddda7a](https://github.com/growthops-digital/ext-ts/commit/3ddda7aad391fa73d83ae106438844bd3e6729bd))
+
 ### [1.2.1](https://github.com/growthops-digital/ext-ts/compare/v1.2.0...v1.2.1) (2021-08-12)
 
 ## [1.2.0](https://github.com/growthops-digital/ext-ts/compare/v1.0.0...v1.2.0) (2021-08-12)
