@@ -26,9 +26,10 @@ Determines whether the suppied string, object or array is empty, eg. `''`, `[]`,
 
 Complement of `isEmpty`.
 
-### `notEquals: (a: any, b: any) => boolean`
+### `1. notEquals: (a: any, b: any) => boolean`
+### `2. notEquals: (a: any) => (b: any) => boolean`
 
-Determines whether the two supplied objects are not strictly equal (using `!==`).
+Determines whether the two supplied objects are not equal. Doesn't handle cyclical data structures.
 
 ### `notNil: (input: any) => boolean`
 

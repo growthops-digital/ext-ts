@@ -17,3 +17,13 @@ test('identical strings are equal', () => {
 
 	expect(result).toBe(false);
 });
+
+test('ensure data-last operation is supported', () => {
+	const inputA = 'foo';
+	const inputB = 'foo';
+
+	const equalsFoo = notEquals(inputA);
+	const result = equalsFoo(inputB);
+
+	expect(result).toBe(false);
+});
