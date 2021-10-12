@@ -6,6 +6,7 @@ export {default as isEmpty} from './is-empty';
 export {default as notEmpty} from './not-empty';
 export {default as notEquals} from './not-equals';
 export {default as notNil} from './not-nil';
+export {default as useOnScreen} from './use-on-screen';
 
 export type {Collapsible} from './collapse';
 export type {Emptiable} from './is-empty';
