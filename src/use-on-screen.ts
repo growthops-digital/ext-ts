@@ -1,14 +1,14 @@
 import {useState, useRef, useEffect} from 'react';
 
-const useOnScreen = (options?: IntersectionObserverInit) => {
-	const ref = useRef(null);
+const useOnScreen = <T extends Element>(options?: IntersectionObserverInit) => {
+	const ref = useRef<T>(null);
 	const [state, setState] = useState({
 		isVisible: false,
 		isDirty: false,
 	});
 
 	useEffect(() => {
-		if (!ref.current) {
+		if (ref.current === null) {
 			return;
 		}
 
