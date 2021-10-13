@@ -67,3 +67,22 @@ collapse([
 
 // Returns: 'foo bar baz'
 ```
+
+### `useOnScreen: <T extends Element>(options?: IntersectionObserverInit) => {ref, isVisible, isDirty}`
+
+Creates an IntersectionObserver attached to the associated `ref` toggling `isVisible` when the object comes into view. The `isDirty` will be set to `true` once the object becomes visible and then remain `true` thereafter — useful for once-off events (scroll into view animations for instance).
+
+**Example**
+```js
+import {useOnScreen} from '@growthops/ext-ts';
+
+const Example = () => {
+	const {ref, isVisible} = useOnScreen<HTMLDivElement>({threshold: 0.5});
+
+	return (
+		<div ref={ref} className={isVisible ? 'bg-red-500' : 'bg-white'}>
+			I turn red when 50% or more of me is visible in the viewport.
+		</div>
+	);
+};
+```
