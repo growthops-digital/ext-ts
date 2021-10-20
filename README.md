@@ -35,6 +35,10 @@ Determines whether the two supplied objects are not equal. Doesn't handle cyclic
 
 Determines whether the supplied input is not `null` or `undefined`.
 
+### `isPopulated: (input: any) => boolean`
+
+Determines whether the supplied input has been populated (not `null`, `undefined`, `[]`, `''`, or `{}`).
+
 ### `collapse: (input: string | string[]) => string`
 
 Takes a string or an array of strings consisting of newlines, tabs, and/or multiple spaces and returns a single collapsed string with only one space between each "word".
