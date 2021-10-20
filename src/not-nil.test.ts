@@ -1,3 +1,4 @@
+import {expect, test} from '@jest/globals';
 import notNil from './not-nil';
 
 test('string is not nil', () => {

@@ -1,3 +1,4 @@
+import {expect, test} from '@jest/globals';
 import notEmpty from './not-empty';
 
 test('empty string', () => {

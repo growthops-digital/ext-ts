@@ -1,3 +1,4 @@
+import {expect, test} from '@jest/globals';
 import replace from './replace';
 
 test('replaces all matching patterns in the supplied string', () => {

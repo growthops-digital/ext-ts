@@ -1,3 +1,4 @@
+import {expect, test} from '@jest/globals';
 import notEquals from './not-equals';
 
 test('string does not equal number', () => {

@@ -1,3 +1,4 @@
+import {expect, test} from '@jest/globals';
 import collapse from './collapse';
 
 test('collapses multi-line string', () => {

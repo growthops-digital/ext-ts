@@ -12,7 +12,7 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "tsc",
-		"test": "jest --coverage",
+		"test": "jest --passWithNoTests --coverage --runInBand",
 		"release": "standard-version",
 		"lint": "xo",
 		"cz": "cz"
@@ -38,6 +38,7 @@
 		"react": "^17.0.2"
 	},
 	"devDependencies": {
+		"@jest/globals": "^27.3.1",
 		"@types/jest": "^27.0.2",
 		"@types/react": "^17.0.29",
 		"commitizen": "^4.2.4",
