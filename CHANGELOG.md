@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/growthops-digital/ext-ts/compare/v1.5.0...v1.5.1) (2021-10-20)
+
+
+### Bug Fixes
+
+* convert isPopulated and notPopulated into type guards ([54387ba](https://github.com/growthops-digital/ext-ts/commit/54387bafd044c2007097bdbb4c1d0b82c62f5e72))
+* simplify isEmpty function, remove type guard, and update documentation ([bcd4895](https://github.com/growthops-digital/ext-ts/commit/bcd48953b7feb890519978c0e99778a714dd33d7))
+
 ## [1.5.0](https://github.com/growthops-digital/ext-ts/compare/v1.4.0...v1.5.0) (2021-10-20)
 
 
