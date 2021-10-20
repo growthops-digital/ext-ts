@@ -1,6 +1,8 @@
 import {isArray, isString, isObject} from 'remeda';
 
-const isEmpty = <T extends string | any[] | Record<string, unknown>>(input: T): boolean => {
+type Emptiable = string | any[] | Record<string, unknown>;
+
+const isEmpty = <T extends Emptiable>(input: T): boolean => {
 	if (isArray(input) || isString(input)) {
 		return input.length === 0;
 	}
@@ -13,3 +15,7 @@ const isEmpty = <T extends string | any[] | Record<string, unknown>>(input: T): 
 };
 
 export default isEmpty;
+
+export type {
+	Emptiable,
+};
