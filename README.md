@@ -39,6 +39,10 @@ Determines whether the supplied input is not `null` or `undefined`.
 
 Determines whether the supplied input has been populated (not `null`, `undefined`, `[]`, `''`, or `{}`).
 
+### `notPopulated: (input: any) => boolean`
+
+Determines whether the supplied input has not been populated (is `null`, `undefined`, `[]`, `''`, or `{}`).
+
 ### `collapse: (input: string | string[]) => string`
 
 Takes a string or an array of strings consisting of newlines, tabs, and/or multiple spaces and returns a single collapsed string with only one space between each "word".
