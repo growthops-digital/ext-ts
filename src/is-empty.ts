@@ -1,14 +1,7 @@
 import {isArray, isString, isObject} from 'remeda';
 
-type Emptiable = string | Record<any, any> | any[];
-
-// eslint-disable-next-line @typescript-eslint/ban-types
-const isEmpty = <T>(input: T): input is Extract<T, '' | [] | {}> => {
-	if (isString(input)) {
-		return input === '';
-	}
-
-	if (isArray(input)) {
+const isEmpty = <T extends string | any[] | Record<string, unknown>>(input: T): boolean => {
+	if (isArray(input) || isString(input)) {
 		return input.length === 0;
 	}
 
@@ -20,7 +13,3 @@ const isEmpty = <T>(input: T): input is Extract<T, '' | [] | {}> => {
 };
 
 export default isEmpty;
-
-export type {
-	Emptiable,
-};
