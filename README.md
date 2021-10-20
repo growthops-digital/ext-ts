@@ -35,13 +35,13 @@ Determines whether the two supplied objects are not equal. Doesn't handle cyclic
 
 Determines whether the supplied input is not `null` or `undefined`.
 
-### `isPopulated: (input: any) => boolean`
+### `isPopulated: <T extends string | any[] | Record<string, unknown>>(input: T) => boolean`
 
-Determines whether the supplied input has been populated (not `null`, `undefined`, `[]`, `''`, or `{}`).
+Determines whether the supplied input has been populated (not `null`, `undefined`, `''`, `[]`, or `{}`).
 
-### `notPopulated: (input: any) => boolean`
+### `notPopulated: <T extends string | any[] | Record<string, unknown>>(input: T) => boolean`
 
-Determines whether the supplied input has not been populated (is `null`, `undefined`, `[]`, `''`, or `{}`).
+Complement of `isPopulated`.
 
 ### `collapse: (input: string | string[]) => string`
 
