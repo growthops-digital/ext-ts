@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/growthops-digital/ext-ts/compare/v1.4.0...v1.5.0) (2021-10-20)
+
+
+### Features
+
+* add isPopulated function ([cea86fc](https://github.com/growthops-digital/ext-ts/commit/cea86fcf9c3f77652e51ea61136067aedab23d5f))
+* add notPopulated function ([1f92cc9](https://github.com/growthops-digital/ext-ts/commit/1f92cc9248cf80ea18fc1f52d83cd02c202656ba))
+
+
+### Bug Fixes
+
+* add missing isPopulated and notPopulated function exports to src/index.ts ([28afc3d](https://github.com/growthops-digital/ext-ts/commit/28afc3d32f62fd473441bee76971cfb1b327e8c5))
+
 ## [1.4.0](https://github.com/growthops-digital/ext-ts/compare/v1.3.0...v1.4.0) (2021-10-13)
 
 
