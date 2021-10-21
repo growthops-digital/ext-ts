@@ -51,6 +51,8 @@ Generates a [Picsum](https://picsum.photos/) image URL based on the provided wid
 
 A lookup table of common aspect ratios.
 
+<img src="https://user-images.githubusercontent.com/56568247/138200402-ed236b97-f1e6-45ab-bb24-7480585f4801.jpg" width="600"/>
+
 ### `collapse: (input: string | string[]) => string`
 
 Takes a string or an array of strings consisting of newlines, tabs, and/or multiple spaces and returns a single collapsed string with only one space between each "word".
