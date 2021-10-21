@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/growthops-digital/ext-ts/compare/v1.6.0...v1.7.0) (2021-10-21)
+
+
+### Features
+
+* add cinemaFilm and cinemaScope aspect ratios ([21259e8](https://github.com/growthops-digital/ext-ts/commit/21259e80ed40c793365f13100be147a2e06b8fa4))
+
 ## [1.6.0](https://github.com/growthops-digital/ext-ts/compare/v1.5.1...v1.6.0) (2021-10-21)
 
 
