@@ -43,6 +43,14 @@ Determines whether the supplied input has been populated (not `null`, `undefined
 
 Complement of `isPopulated`.
 
+### `generateTestImage: (width: number, aspectRatio: number, picsumId?: number) => string`
+
+Generates a [Picsum](https://picsum.photos/) image URL based on the provided width and aspect ratio. Optionally supports specific Picsum image ID's.
+
+### `aspectRatios`
+
+A lookup table of common aspect ratios.
+
 ### `collapse: (input: string | string[]) => string`
 
 Takes a string or an array of strings consisting of newlines, tabs, and/or multiple spaces and returns a single collapsed string with only one space between each "word".
