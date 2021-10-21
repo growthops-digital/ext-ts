@@ -1,4 +1,4 @@
-const aspectRatios = {
+const aspectRatios: Record<string, number> = {
 	cinemaFilm: (1.85 / 1),
 	cinemaScope: (2.35 / 1),
 	display: (5 / 4),
