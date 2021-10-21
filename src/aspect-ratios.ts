@@ -1,4 +1,6 @@
 const aspectRatios = {
+	cinemaFilm: (1.85 / 1),
+	cinemaScope: (2.35 / 1),
 	display: (5 / 4),
 	film: (3 / 2),
 	hdtv: (16 / 9),
