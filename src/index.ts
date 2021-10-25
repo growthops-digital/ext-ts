@@ -14,3 +14,4 @@ export {default as useOnScreen} from './use-on-screen';
 
 export type {Collapsible} from './collapse';
 export type {Emptiable} from './is-empty';
+export type {AspectRatio} from './aspect-ratios';

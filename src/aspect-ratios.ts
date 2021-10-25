@@ -1,4 +1,15 @@
-const aspectRatios: Record<string, number> = {
+type AspectRatio =
+	| 'cinemaFilm'
+	| 'cinemaScope'
+	| 'display'
+	| 'film'
+	| 'hdtv'
+	| 'sdtv'
+	| 'smartphone'
+	| 'square'
+	| 'widescreen';
+
+const aspectRatios: Record<AspectRatio, number> = {
 	cinemaFilm: (1.85 / 1),
 	cinemaScope: (2.35 / 1),
 	display: (5 / 4),
@@ -11,3 +22,7 @@ const aspectRatios: Record<string, number> = {
 };
 
 export default aspectRatios;
+
+export type {
+	AspectRatio,
+};
