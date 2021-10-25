@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/growthops-digital/ext-ts/compare/v1.7.2...v2.0.0) (2021-10-25)
+
+
+### Features
+
+* define aspect ratio fraction and notational lookup tables ([cb96205](https://github.com/growthops-digital/ext-ts/commit/cb962059a0fdda683b1b822c9c4f03ec5ebced70))
+
+
+### Bug Fixes
+
+* update generateTestImage function signature to match new aspect ratio utils and fix tests ([d778ede](https://github.com/growthops-digital/ext-ts/commit/d778edec8a79af990fb705bbf57ed64348e11b21))
+
 ### [1.7.2](https://github.com/growthops-digital/ext-ts/compare/v1.7.1...v1.7.2) (2021-10-25)
 
 ### [1.7.1](https://github.com/growthops-digital/ext-ts/compare/v1.7.0...v1.7.1) (2021-10-21)
