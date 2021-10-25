@@ -2,9 +2,7 @@
 
 [![codecov](https://codecov.io/gh/growthops-digital/ext-ts/branch/main/graph/badge.svg?token=vtv61Ll4j1)](https://codecov.io/gh/growthops-digital/ext-ts)
 
-A collection of useful TypeScript-ready FP and misc utilities.
-
-## Functions
+## Utility Functions
 
 ### `trim: (input: string) => string`
 
@@ -46,12 +44,6 @@ Complement of `isPopulated`.
 ### `generateTestImage: (width: number, aspectRatio: number, picsumId?: number) => string`
 
 Generates a [Picsum](https://picsum.photos/) image URL based on the provided width and aspect ratio. Optionally supports specific Picsum image ID's.
-
-### `aspectRatios`
-
-A lookup table of common aspect ratios.
-
-<img src="https://user-images.githubusercontent.com/56568247/138200402-ed236b97-f1e6-45ab-bb24-7480585f4801.jpg" width="600"/>
 
 ### `collapse: (input: string | string[]) => string`
 
@@ -104,3 +96,15 @@ const Example = () => {
 	);
 };
 ```
+
+## Aspect Ratios
+
+<img src="https://user-images.githubusercontent.com/56568247/138200402-ed236b97-f1e6-45ab-bb24-7480585f4801.jpg" width="600"/>
+
+### `aspectRatioFractions: Record<AspectRatio, number>`
+
+A lookup table of common aspect ratios in their fractional form (eg. 1.5 for Film).
+
+### `aspectRatioNotations: Record<AspectRatio, string>`
+
+A lookup table of common aspect ratios in their notational string form (eg. '3:2' for Film).

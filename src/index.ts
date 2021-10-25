@@ -1,4 +1,4 @@
-export {default as aspectRatios} from './aspect-ratios';
+export {aspectRatioFractions, aspectRatioNotations} from './aspect-ratios';
 export {default as collapse} from './collapse';
 export {default as generateTestImage} from './generate-test-image';
 export {default as isEmpty} from './is-empty';
