@@ -33,6 +33,10 @@ Determines whether the two supplied objects are not equal. Doesn't handle cyclic
 
 Determines whether the supplied input is not `null` or `undefined`.
 
+### `keyEquals: (key: string, value: string, input: any) => boolean`
+
+Determines whether the input is a record type and it has a key with the supplied value.
+
 ### `isPopulated: <T extends string | any[] | Record<string, unknown>>(input: T) => boolean`
 
 Determines whether the supplied input has been populated (not `null`, `undefined`, `''`, `[]`, or `{}`).

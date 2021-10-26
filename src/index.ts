@@ -4,6 +4,7 @@ export {default as generateTestImage} from './generate-test-image';
 export {default as isEmpty} from './is-empty';
 export {default as isPopulated} from './is-populated';
 export {default as join} from './join';
+export {default as keyEquals} from './key-equals';
 export {default as notEmpty} from './not-empty';
 export {default as notEquals} from './not-equals';
 export {default as notNil} from './not-nil';
