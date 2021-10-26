@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/growthops-digital/ext-ts/compare/v2.1.0...v2.2.0) (2021-10-26)
+
+
+### Features
+
+* add attempt function ([539e85f](https://github.com/growthops-digital/ext-ts/commit/539e85fa1a2004c0b406147051dc370fd683c438))
+
 ## [2.1.0](https://github.com/growthops-digital/ext-ts/compare/v2.0.0...v2.1.0) (2021-10-26)
 
 
