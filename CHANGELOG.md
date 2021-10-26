@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/growthops-digital/ext-ts/compare/v2.0.0...v2.1.0) (2021-10-26)
+
+
+### Features
+
+* add keyEquals function ([e3eae31](https://github.com/growthops-digital/ext-ts/commit/e3eae31d41fa7ef23da0e40aab37e3d01df3e1be))
+
 ## [2.0.0](https://github.com/growthops-digital/ext-ts/compare/v1.7.2...v2.0.0) (2021-10-25)
 
 
