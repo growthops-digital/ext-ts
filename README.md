@@ -33,6 +33,10 @@ Determines whether the two supplied objects are not equal. Doesn't handle cyclic
 
 Determines whether the supplied input is not `null` or `undefined`.
 
+### `attempt: <T, K>(fn: (T: any) => K, input: T) => K | null`
+
+Attempt to executed the supplied function with input as its first and only parameter, assuming input is not nil.
+
 ### `keyEquals: (key: string, value: string, input: any) => boolean`
 
 Determines whether the input is a record type and it has a key with the supplied value.
