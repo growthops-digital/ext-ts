@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/growthops-digital/ext-ts/compare/v2.2.0...v2.3.0) (2021-11-03)
+
+
+### Features
+
+* add Portrait and Tall aspect ratios ([2b9806e](https://github.com/growthops-digital/ext-ts/commit/2b9806e088e6997b9177437a40413401d1dd1aab))
+
 ## [2.2.0](https://github.com/growthops-digital/ext-ts/compare/v2.1.0...v2.2.0) (2021-10-26)
 
 
