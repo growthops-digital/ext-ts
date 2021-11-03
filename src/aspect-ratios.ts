@@ -3,6 +3,8 @@ type AspectRatio =
 	| 'cinemaScope'
 	| 'display'
 	| 'film'
+	| 'portrait'
+	| 'tall'
 	| 'hdtv'
 	| 'sdtv'
 	| 'smartphone'
@@ -14,6 +16,8 @@ const aspectRatioFractions: Record<AspectRatio, number> = {
 	cinemaScope: (2.35 / 1),
 	display: (5 / 4),
 	film: (3 / 2),
+	portrait: (3 / 4),
+	tall: (2 / 3),
 	hdtv: (16 / 9),
 	sdtv: (4 / 3),
 	smartphone: (9 / 16),
@@ -26,6 +30,8 @@ const aspectRatioNotations: Record<AspectRatio, string> = {
 	cinemaScope: '2.35:1',
 	display: '5:4',
 	film: '3:2',
+	portrait: '3:4',
+	tall: '2:3',
 	hdtv: '16:9',
 	sdtv: '4:3',
 	smartphone: '9:16',

@@ -107,7 +107,7 @@ const Example = () => {
 
 ## Aspect Ratios
 
-<img src="https://user-images.githubusercontent.com/56568247/138200402-ed236b97-f1e6-45ab-bb24-7480585f4801.jpg" width="600"/>
+<img src="https://user-images.githubusercontent.com/56568247/140027374-486d0432-b2f6-4865-91b7-a514cc586190.jpg" width="600"/>
 
 ### `aspectRatioFractions: Record<AspectRatio, number>`
 
