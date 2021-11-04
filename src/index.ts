@@ -1,6 +1,7 @@
 export {aspectRatioFractions, aspectRatioNotations} from './aspect-ratios';
 export {default as attempt} from './attempt';
 export {default as collapse} from './collapse';
+export {default as generateDatoTestImage} from './generate-dato-test-image';
 export {default as generateTestImage} from './generate-test-image';
 export {default as isEmpty} from './is-empty';
 export {default as isPopulated} from './is-populated';

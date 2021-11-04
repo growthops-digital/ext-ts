@@ -53,6 +53,10 @@ Complement of `isPopulated`.
 
 Generates a [Picsum](https://picsum.photos/) image URL based on the provided width and aspect ratio. Optionally supports specific Picsum image ID's.
 
+### `generateDatoTestImage: (width: number, aspectRatio: number, picsumId?: number) => ResponsiveImageType`
+
+Generates a test image record compatible with the DatoCMS ResponsiveImageType.
+
 ### `collapse: (input: string | string[]) => string`
 
 Takes a string or an array of strings consisting of newlines, tabs, and/or multiple spaces and returns a single collapsed string with only one space between each "word".
