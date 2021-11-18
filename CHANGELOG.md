@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/growthops-digital/ext-ts/compare/v2.5.0...v2.6.0) (2021-11-18)
+
+
+### Features
+
+* extend attempt function to accept more than one supplied processing function parameter ([e8f88c7](https://github.com/growthops-digital/ext-ts/commit/e8f88c73427a60eeac389f013c9a6ed96e2b26f7))
+
 ## [2.5.0](https://github.com/growthops-digital/ext-ts/compare/v2.4.0...v2.5.0) (2021-11-07)
 
 
