@@ -120,3 +120,9 @@ A lookup table of common aspect ratios in their fractional form (eg. 1.5 for Fil
 ### `aspectRatioNotations: Record<AspectRatio, string>`
 
 A lookup table of common aspect ratios in their notational string form (eg. '3:2' for Film).
+
+## Types
+
+### `Optional<T>`
+
+Constructs a type where `T` can be undefined or null (equivalent to `T | null | undefined`).

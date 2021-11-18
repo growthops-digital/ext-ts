@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/growthops-digital/ext-ts/compare/v2.4.0...v2.5.0) (2021-11-07)
+
+
+### Features
+
+* add Optional utility type ([4c16c2b](https://github.com/growthops-digital/ext-ts/commit/4c16c2bb428fcc569bcef5372a473668dd58f6e9))
+
 ## [2.4.0](https://github.com/growthops-digital/ext-ts/compare/v2.3.0...v2.4.0) (2021-11-04)
 
 
