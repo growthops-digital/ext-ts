@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.6.1](https://github.com/growthops-digital/ext-ts/compare/v2.6.0...v2.6.1) (2021-11-18)
+
+
+### Bug Fixes
+
+* update attempt function signature to explicity allow the suppied input to be T/undefined/null ([7a691fa](https://github.com/growthops-digital/ext-ts/commit/7a691fac410245eb1a6a8a23541df9c7c5e6b64b))
+
 ## [2.6.0](https://github.com/growthops-digital/ext-ts/compare/v2.5.0...v2.6.0) (2021-11-18)
 
 
