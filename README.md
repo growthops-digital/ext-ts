@@ -33,9 +33,9 @@ Determines whether the two supplied objects are not equal. Doesn't handle cyclic
 
 Determines whether the supplied input is not `null` or `undefined`.
 
-### `attempt: <T, K>(fn: (T: any) => K, input: T) => K | null`
+### `attempt: <T, K extends any[], O>(fn: (input: T, ...rest: K) => O, input: T, ...rest: K) => O | null`
 
-Attempt to executed the supplied function with input as its first and only parameter, assuming input is not nil.
+Attempt to executed the supplied function with input as its first parameter, assuming input is not nil. Any remaining arguments passed to attempt will be supplied to the function call being attempted.
 
 ### `keyEquals: (key: string, value: string, input: any) => boolean`
 

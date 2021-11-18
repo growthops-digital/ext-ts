@@ -1,8 +1,8 @@
 import notNil from './not-nil';
 
-const attempt = <T, K>(fn: (T: any) => K, input: T) => {
+const attempt = <T, K extends any[], O>(fn: (input: T, ...rest: K) => O, input: T, ...rest: K) => {
 	if (notNil(input)) {
-		return fn(input);
+		return fn(input, ...rest);
 	}
 
 	return null;
