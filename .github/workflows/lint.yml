@@ -25,7 +25,8 @@ jobs:
           auto_fix: true
           git_name: Tristan (CI)
           git_email: tristan.strathearn@growthops.com.au
-          xo: true
+          commit_message: "chore: fix ${linter} code style violations"
+          eslint: true
       - name: Run tests
         run: npm run test
       - name: Upload coverage to Codecov
