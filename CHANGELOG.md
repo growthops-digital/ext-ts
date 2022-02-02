@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/growthops-digital/ext-ts/compare/v2.6.1...v3.0.0) (2022-02-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace XO with GrowthOps ESLint config, fix all affected files
+
+### Features
+
+* replace XO with GrowthOps ESLint config, fix all affected files ([d5e30f2](https://github.com/growthops-digital/ext-ts/commit/d5e30f281b5ac00f8371fa0e68f91af893b1f9c4))
+
 ### [2.6.1](https://github.com/growthops-digital/ext-ts/compare/v2.6.0...v2.6.1) (2021-11-18)
 
 
