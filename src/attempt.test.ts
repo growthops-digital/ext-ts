@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-magic-numbers */
 import {expect, test} from '@jest/globals';
 import attempt from './attempt';
 
-const operationA = (a: number) => a + 1;
-const operationB = (a: number, b: number) => a + b;
-const operationC = (a: number, b: number, c: number) => a + b + c;
+const operationA = (a: number): number => a + 1;
+const operationB = (a: number, b: number): number => a + b;
+const operationC = (a: number, b: number, c: number): number => a + b + c;
 
 test('attempt operation on defined input', () => {
 	const input = 0;

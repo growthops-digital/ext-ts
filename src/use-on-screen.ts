@@ -1,6 +1,12 @@
 import {useState, useRef, useEffect} from 'react';
 
-const useOnScreen = <T extends Element>(options?: IntersectionObserverInit) => {
+type UseOnScreenResult<T> = {
+	ref: React.RefObject<T>;
+	isVisible: boolean;
+	isDirty: boolean;
+};
+
+const useOnScreen = <T extends Element>(options?: IntersectionObserverInit): UseOnScreenResult<T> => {
 	const ref = useRef<T>(null);
 	const [state, setState] = useState({
 		isVisible: false,
@@ -24,7 +30,7 @@ const useOnScreen = <T extends Element>(options?: IntersectionObserverInit) => {
 		return () => {
 			observer.disconnect();
 		};
-	}, [ref.current]); // eslint-disable-line react-hooks/exhaustive-deps
+	}, [ref.current]);
 
 	return {ref, isVisible: state.isVisible, isDirty: state.isDirty};
 };

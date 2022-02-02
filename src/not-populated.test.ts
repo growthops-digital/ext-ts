@@ -42,6 +42,7 @@ test('empty array', () => {
 });
 
 test('populated array', () => {
+	// eslint-disable-next-line @typescript-eslint/no-magic-numbers
 	const input = [0, 1, 2];
 
 	const result = notPopulated(input);

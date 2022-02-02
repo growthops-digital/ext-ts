@@ -1,8 +1,8 @@
 import {isObject} from 'remeda';
 
-const keyEquals = (key: string, value: string, input: any): boolean => {
+const keyEquals = (key: string, value: string, input: unknown): boolean => {
 	if (isObject(input)) {
-		return input[key] ? input[key] === value : false;
+		return input[key] !== undefined ? input[key] === value : false;
 	}
 
 	return false;

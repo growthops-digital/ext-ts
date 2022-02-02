@@ -7,10 +7,25 @@
 		"module": "esnext",
 		"esModuleInterop": true,
 		"moduleResolution": "node",
-		"lib": ["dom", "es6", "es2017.object"],
+		"lib": [
+			"dom",
+			"es6",
+			"es2017.object"
+		],
 		"rootDir": "src",
 		"skipLibCheck": true,
 	},
-	"include": ["src"],
-	"exclude": ["node_modules", "dist"]
+	"include": [
+		"src",
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.json",
+		"**/.*.js",
+		"**/*.js",
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
 }

@@ -3,7 +3,7 @@ import replace from './replace';
 import trim from './trim';
 import join from './join';
 
-type Collapsible = string | string[];
+type Collapsible = string[] | string;
 
 const formatString = createPipe(
 	replace(/[\r\n\t]+/g, ' '),

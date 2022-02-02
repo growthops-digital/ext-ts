@@ -1,4 +1,4 @@
-import {ResponsiveImageType} from 'react-datocms';
+import type {ResponsiveImageType} from 'react-datocms';
 import generateTestImage from './generate-test-image';
 import {aspectRatioFractions} from './aspect-ratios';
 import type {AspectRatio} from './aspect-ratios';
