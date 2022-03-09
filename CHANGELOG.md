@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/growthops-digital/ext-ts/compare/v3.0.1...v3.1.0) (2022-03-09)
+
+
+### Features
+
+* add repeat function ([4e93da6](https://github.com/growthops-digital/ext-ts/commit/4e93da692aa7013b1d91223315e5c31760ff9b2d))
+
 ### [3.0.1](https://github.com/growthops-digital/ext-ts/compare/v3.0.0...v3.0.1) (2022-02-02)
 
 ## [3.0.0](https://github.com/growthops-digital/ext-ts/compare/v2.6.1...v3.0.0) (2022-02-02)
