@@ -16,6 +16,19 @@ Used to build a function that will join the supplied array of strings together u
 
 Used to build a function that will replace the supplied `pattern` with the `replacement` string. Functionally identical to `String.prototype.replace()`.
 
+### `repeat: (fn: () => void, times: number) => void`
+
+Calls the supplied function the specified number of `times`. The function (`fn`) should take no arguments, and return nothing.
+
+**Example**
+```js
+import {repeat} from '@growthops/ext-ts';
+
+repeat(() => {
+	console.log('Hello!');
+}, 5); // Will print "Hello!" to the console 5 times.
+```
+
 ### `isEmpty: <T extends string | any[] | Record<string, unknown>>(input: T) => boolean`
 
 Determines whether the suppied string, array, or record is empty, eg. `''`, `[]`, or `{}` respectively.
