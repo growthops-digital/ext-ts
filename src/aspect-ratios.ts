@@ -1,5 +1,15 @@
 type AspectRatio =
-	'cinemaFilm' | 'cinemaScope' | 'display' | 'film' | 'hdtv' | 'portrait' | 'sdtv' | 'smartphone' | 'square' | 'tall' | 'widescreen';
+	| 'cinemaFilm'
+	| 'cinemaScope'
+	| 'display'
+	| 'film'
+	| 'hdtv'
+	| 'portrait'
+	| 'sdtv'
+	| 'smartphone'
+	| 'square'
+	| 'tall'
+	| 'widescreen';
 
 /* eslint-disable @typescript-eslint/no-magic-numbers */
 const aspectRatioFractions: Record<AspectRatio, number> = {

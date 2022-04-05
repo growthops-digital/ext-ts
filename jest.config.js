@@ -3,6 +3,7 @@ const config = {
 	verbose: true,
 	testEnvironment: 'jsdom',
 	moduleNameMapper: {
+		// eslint-disable-next-line @typescript-eslint/naming-convention
 		'^@app(.*)$': '<rootDir>/$1',
 	},
 	modulePathIgnorePatterns: [
