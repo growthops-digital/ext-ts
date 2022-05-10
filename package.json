@@ -15,18 +15,6 @@
 		"test": "jest --passWithNoTests --coverage --runInBand",
 		"lint": "eslint ."
 	},
-	"xo": {
-		"extends": "xo-react",
-		"envs": [
-			"browser",
-			"node",
-			"jest"
-		],
-		"rules": {
-			"unicorn/no-array-callback-reference": 0,
-			"newline-before-return": 2
-		}
-	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/growthops-digital/ext-ts.git"
