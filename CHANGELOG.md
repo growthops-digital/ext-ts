@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.2.2](https://github.com/growthops-digital/ext-ts/compare/v3.2.1...v3.2.2) (2022-05-11)
+
+
+### Bug Fixes
+
+* update NaturalSelection type in evolve function to properly support partial updater records & harden tests ([22ed5ee](https://github.com/growthops-digital/ext-ts/commit/22ed5ee5979aa44461e65f3989a87a96f5545f8f))
+
 ### [3.2.1](https://github.com/growthops-digital/ext-ts/compare/v3.2.0...v3.2.1) (2022-05-11)
 
 
