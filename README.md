@@ -122,6 +122,39 @@ const Example = () => {
 };
 ```
 
+### `evolve: <T>(partial: NaturalSelection<T>) => (data: T) => T`
+
+Creates a function that will evolve the supplied data using the `partial` record. The partial record will be merged with the data, and the result will be returned. The partial record can be comprised of concrete values, or of functions that will be called with the current respective key's value and the result of the function will be used as the new value.
+
+**Example**
+```js
+import {useState, useCallback} from 'react';
+import {evolve} from '@growthops/ext-ts';
+
+type State = {
+	clicked: boolean;
+	count: number;
+}
+
+const Clicker = () => {
+	const [state, setState] = useState<State>({count: 0});
+
+	const handleClick = useCallback(() => {
+		setState(evolve<State>({
+			clicked: true,
+			count: x => x + 1
+		}));
+	});
+
+	return (
+		<div>
+			<button onClick={handleClick}>Click me!</button>
+			<div>{state.count}</div>
+		</div>
+	);
+};
+```
+
 ## Aspect Ratios
 
 <img src="https://user-images.githubusercontent.com/56568247/140027374-486d0432-b2f6-4865-91b7-a514cc586190.jpg" width="600"/>
