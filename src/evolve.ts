@@ -1,5 +1,5 @@
 type NaturalSelection<T> = {
-	[K in keyof T]: T[K] | ((value: T[K]) => T[K]) | undefined;
+	[K in keyof T]?: T[K] | ((value: T[K]) => T[K]) | undefined;
 };
 
 const evolve = <T>(partial: NaturalSelection<T>) => (data: T): T => {

@@ -3,11 +3,13 @@ import evolve from './evolve';
 
 type Data = {
 	foo: number;
+	bar: boolean;
 };
 
 test('it evolves the supplied object using concrete values', () => {
 	const input: Data = {
 		foo: 1,
+		bar: false,
 	};
 
 	const result = evolve<Data>({
@@ -20,8 +22,9 @@ test('it evolves the supplied object using concrete values', () => {
 });
 
 test('it evolves the supplied object using concrete values — curried', () => {
-	const input = {
+	const input: Data = {
 		foo: 1,
+		bar: false,
 	};
 
 	const curriedEvolve = evolve<Data>({
@@ -36,8 +39,9 @@ test('it evolves the supplied object using concrete values — curried', () => {
 });
 
 test('it evolves the supplied object using functions', () => {
-	const input = {
+	const input: Data = {
 		foo: 1,
+		bar: false,
 	};
 
 	const result = evolve<Data>({
@@ -51,8 +55,9 @@ test('it evolves the supplied object using functions', () => {
 });
 
 test('it evolves the supplied object using functions — curried', () => {
-	const input = {
+	const input: Data = {
 		foo: 1,
+		bar: false,
 	};
 
 	const curriedEvolve = evolve<Data>({
