@@ -1,6 +1,5 @@
 type AspectRatio =
 	| 'cinemaFilm'
-	| 'cinemaScope'
 	| 'display'
 	| 'film'
 	| 'hdtv'
@@ -13,8 +12,7 @@ type AspectRatio =
 
 /* eslint-disable @typescript-eslint/no-magic-numbers */
 const aspectRatioFractions: Record<AspectRatio, number> = {
-	cinemaFilm: 1.85 / 1,
-	cinemaScope: 2.35 / 1,
+	cinemaFilm: 2 / 1,
 	display: 5 / 4,
 	film: 3 / 2,
 	portrait: 3 / 4,
@@ -28,8 +26,7 @@ const aspectRatioFractions: Record<AspectRatio, number> = {
 /* eslint-enable @typescript-eslint/no-magic-numbers */
 
 const aspectRatioNotations: Record<AspectRatio, string> = {
-	cinemaFilm: '1.85:1',
-	cinemaScope: '2.35:1',
+	cinemaFilm: '2:1',
 	display: '5:4',
 	film: '3:2',
 	portrait: '3:4',
