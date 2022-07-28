@@ -20,7 +20,7 @@ const success = <T>(data: T): Success<T> => ({
 	data,
 });
 
-const failure = (message: string, data: unknown = null): Failure => ({
+const failure = (message: string, data?: unknown): Failure => ({
 	type: 'failure',
 	message,
 	data,

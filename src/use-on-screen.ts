@@ -7,14 +7,14 @@ type UseOnScreenResult<T> = {
 };
 
 const useOnScreen = <T extends Element>(options?: IntersectionObserverInit): UseOnScreenResult<T> => {
-	const ref = useRef<T>(null);
+	const reference = useRef<T>(null);
 	const [state, setState] = useState({
 		isVisible: false,
 		isDirty: false,
 	});
 
 	useEffect(() => {
-		if (ref.current === null) {
+		if (reference.current === null) {
 			return;
 		}
 
@@ -25,14 +25,14 @@ const useOnScreen = <T extends Element>(options?: IntersectionObserverInit): Use
 			}));
 		}, options);
 
-		observer.observe(ref.current);
+		observer.observe(reference.current);
 
 		return () => {
 			observer.disconnect();
 		};
-	}, [ref.current]);
+	}, [reference.current]);
 
-	return {ref, isVisible: state.isVisible, isDirty: state.isDirty};
+	return {ref: reference, isVisible: state.isVisible, isDirty: state.isDirty};
 };
 
 export default useOnScreen;

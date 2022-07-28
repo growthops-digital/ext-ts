@@ -24,7 +24,7 @@ test('nil data failure function creates correct data structure', () => {
 	const expected: Failure = {
 		type: 'failure',
 		message: 'foo',
-		data: null,
+		data: undefined,
 	};
 
 	expect(isFailure(result)).toBe(true);

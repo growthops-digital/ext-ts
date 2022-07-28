@@ -11,6 +11,16 @@ test('record contains key with value', () => {
 	expect(result).toBe(true);
 });
 
+test('record contains key with undefined value', () => {
+	const input = {
+		foo: undefined,
+	};
+
+	const result = keyEquals('foo', 'bar', input);
+
+	expect(result).toBe(false);
+});
+
 test('record does not contain key with value', () => {
 	const input = {
 		foo: 'bar',

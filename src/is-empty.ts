@@ -1,4 +1,4 @@
-import {isArray, isString, isObject} from 'remeda';
+import {isArray, isString} from 'remeda';
 
 type Emptiable = Record<string, unknown> | unknown[] | string;
 
@@ -9,11 +9,7 @@ const isEmpty = <T extends Emptiable>(input: T): boolean => {
 		return input.length === LENGTH_ZERO;
 	}
 
-	if (isObject(input)) {
-		return Object.keys(input).length === LENGTH_ZERO;
-	}
-
-	return false;
+	return Object.keys(input).length === LENGTH_ZERO;
 };
 
 export default isEmpty;

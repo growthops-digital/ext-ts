@@ -1,4 +1,8 @@
-/* eslint-disable @typescript-eslint/naming-convention */
+/*
+	eslint-disable
+	@typescript-eslint/naming-convention,
+	unicorn/prefer-module
+*/
 module.exports = {
 	env: {
 		browser: true,
@@ -31,5 +35,6 @@ module.exports = {
 	},
 	ignorePatterns: [
 		'/dist',
+		'/coverage',
 	],
 };

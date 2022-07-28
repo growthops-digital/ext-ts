@@ -9,15 +9,9 @@ const evolve = <T>(partial: NaturalSelection<T>) => (data: T): T => {
 		if (Object.prototype.hasOwnProperty.call(partial, key) === true) {
 			const value = partial[key];
 
-			if (typeof value === 'function') {
-				evolved = {
-					...evolved,
-					// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-					[key]: value(evolved[key]),
-				};
-			} else {
-				evolved = {...evolved, [key]: value};
-			}
+			evolved = typeof value === 'function'
+				? {...evolved, [key]: value(evolved[key]) as unknown}
+				: {...evolved, [key]: value};
 		}
 	}
 

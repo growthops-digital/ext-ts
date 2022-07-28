@@ -1,7 +1,7 @@
-const repeat = (fn: () => void, times: number): void => {
-	[...Array<number>(times)].forEach(_ => {
-		fn();
-	});
+const repeat = (callable: () => void, times: number): void => {
+	for (const _ of Array.from({length: times})) {
+		callable();
+	}
 };
 
 export default repeat;

@@ -1,8 +1,8 @@
 import {expect, test} from '@jest/globals';
 import isPopulated from './is-populated';
 
-test('null', () => {
-	const input = null;
+test('nil', () => {
+	const input = undefined;
 
 	const result = isPopulated(input);
 

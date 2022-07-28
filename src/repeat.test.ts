@@ -4,23 +4,23 @@ import repeat from './repeat';
 test('check repeat works for a single iteration', () => {
 	const REPEATS = 1;
 
-	const fn = jest.fn();
+	const callable = jest.fn();
 
 	repeat(() => {
-		fn();
+		callable();
 	}, REPEATS);
 
-	expect(fn).toBeCalledTimes(REPEATS);
+	expect(callable).toBeCalledTimes(REPEATS);
 });
 
 test('check repeat works for multiple iterations', () => {
 	const REPEATS = 5;
 
-	const fn = jest.fn();
+	const callable = jest.fn();
 
 	repeat(() => {
-		fn();
+		callable();
 	}, REPEATS);
 
-	expect(fn).toBeCalledTimes(REPEATS);
+	expect(callable).toBeCalledTimes(REPEATS);
 });

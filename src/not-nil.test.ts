@@ -18,6 +18,7 @@ test('number is not nil', () => {
 });
 
 test('null is nil', () => {
+	// eslint-disable-next-line unicorn/no-null
 	const input = null;
 
 	const result = notNil(input);

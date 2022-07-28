@@ -2,6 +2,7 @@ import {expect, test} from '@jest/globals';
 import notPopulated from './not-populated';
 
 test('null', () => {
+	// eslint-disable-next-line unicorn/no-null
 	const input = null;
 
 	const result = notPopulated(input);
@@ -42,7 +43,6 @@ test('empty array', () => {
 });
 
 test('populated array', () => {
-	// eslint-disable-next-line @typescript-eslint/no-magic-numbers
 	const input = [0, 1, 2];
 
 	const result = notPopulated(input);

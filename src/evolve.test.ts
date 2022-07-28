@@ -46,7 +46,7 @@ test('it evolves the supplied object using functions', () => {
 
 	const result = evolve<Data>({
 		// eslint-disable-next-line @typescript-eslint/no-magic-numbers
-		foo: i => i + 1,
+		foo: index => index + 1,
 	})(input);
 
 	expect(result).toMatchObject({
@@ -62,7 +62,7 @@ test('it evolves the supplied object using functions — curried', () => {
 
 	const curriedEvolve = evolve<Data>({
 		// eslint-disable-next-line @typescript-eslint/no-magic-numbers
-		foo: i => i + 1,
+		foo: index => index + 1,
 	});
 
 	const result = curriedEvolve(input);

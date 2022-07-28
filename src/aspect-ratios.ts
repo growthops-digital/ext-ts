@@ -11,7 +11,6 @@ type AspectRatio =
 	| 'tall'
 	| 'widescreen';
 
-/* eslint-disable @typescript-eslint/no-magic-numbers */
 const aspectRatioFractions: Record<AspectRatio, number> = {
 	cinemaFilm: 1.85 / 1,
 	cinemaScope: 2.35 / 1,
@@ -25,7 +24,6 @@ const aspectRatioFractions: Record<AspectRatio, number> = {
 	square: 1,
 	widescreen: 16 / 10,
 };
-/* eslint-enable @typescript-eslint/no-magic-numbers */
 
 const aspectRatioNotations: Record<AspectRatio, string> = {
 	cinemaFilm: '1.85:1',

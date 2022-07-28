@@ -6,7 +6,7 @@ import join from './join';
 type Collapsible = string[] | string;
 
 const formatString = createPipe(
-	replace(/[\r\n\t]+/g, ' '),
+	replace(/[\t\n\r]+/g, ' '),
 	replace(/  +/g, ' '),
 	trim,
 );
