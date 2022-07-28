@@ -167,6 +167,28 @@ A lookup table of common aspect ratios in their fractional form (eg. 1.5 for Fil
 
 A lookup table of common aspect ratios in their notational string form (eg. '3:2' for Film).
 
+## Result
+
+### `isSuccess: <T>(result: Result<T>) => result is Success<T>`
+
+Guard function for narrowing a `Result<T>` to a `Success<T>`.
+
+### `isFailure: <T>(result: Result<T>) => result is Failure`
+
+Guard function for narrowing a `Result<T>` to a `Failure`.
+
+### `success: <T>(data: T) => Success<T>`
+
+Utility function for quickly creating a `Success<T>`.
+
+### `failure: (message: string, data: unknown = null) => Failure`
+
+Utility function for quickly creating a `Failure`.
+
+### `resultFromPromise: async <T, J>(promise: Promise<T>, formatter: (data: T) => J, errorHandler = (data: unknown) => ({message: 'Unknown error occured', data})) => Promise<Result<J>>`
+
+Utility function for converting a `Promise<T>` into a `Promise<Result<J>>`. The `formatter` function supplied is responsible for converting the type returned by the successful promise into the success type encapsulated by the result. The _optional_ `errorHandler` is responsible for converting the type returned by the failed promise into the failure type encapsulated by the result.
+
 ## Types
 
 ### `Optional<T>`

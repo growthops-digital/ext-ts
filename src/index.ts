@@ -15,8 +15,10 @@ export {default as notPopulated} from './not-populated';
 export {default as replace} from './replace';
 export {default as trim} from './trim';
 export {default as useOnScreen} from './use-on-screen';
+export {isSuccess, isFailure, success, failure, resultFromPromise} from './result';
 
 export type {Collapsible} from './collapse';
 export type {Emptiable} from './is-empty';
 export type {AspectRatio} from './aspect-ratios';
 export type {Optional} from './types/optional';
+export type {Result, Success, Failure} from './result';
