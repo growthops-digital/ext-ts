@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/growthops-digital/ext-ts/compare/v3.2.5...v3.3.0) (2022-07-28)
+
+
+### Features
+
+* add Result type and associated utility functions ([cadea5b](https://github.com/growthops-digital/ext-ts/commit/cadea5b3710370da6071b83c7fe67cc08b9bff91))
+
 ### [3.2.5](https://github.com/growthops-digital/ext-ts/compare/v3.2.4...v3.2.5) (2022-07-05)
 
 ### [3.2.4](https://github.com/growthops-digital/ext-ts/compare/v3.2.3...v3.2.4) (2022-05-23)
