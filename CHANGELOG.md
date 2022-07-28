@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.1](https://github.com/growthops-digital/ext-ts/compare/v3.3.0...v3.3.1) (2022-07-28)
+
 ## [3.3.0](https://github.com/growthops-digital/ext-ts/compare/v3.2.5...v3.3.0) (2022-07-28)
 
 
