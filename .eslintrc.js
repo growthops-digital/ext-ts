@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 module.exports = {
 	env: {
 		browser: true,
@@ -18,5 +19,17 @@ module.exports = {
 		react: {
 			version: 'detect',
 		},
+		'import/parsers': {
+			'@typescript-eslint/parser': ['.ts', '.tsx'],
+		},
+		'import/resolver': {
+			typescript: {
+				alwaysTryTypes: true,
+				project: '<root>/tsconfig.json',
+			},
+		},
 	},
+	ignorePatterns: [
+		'/dist',
+	],
 };
