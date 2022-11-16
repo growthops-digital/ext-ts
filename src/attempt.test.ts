@@ -9,21 +9,22 @@ test('attempt operation on defined input', () => {
 	const input = 0;
 	const result = attempt(operationA, input);
 
-	expect(result).not.toBeUndefined();
+	expect(result).not.toBeNull();
 });
 
 test('attempt operation on nil input', () => {
-	const input = undefined;
+	// eslint-disable-next-line unicorn/no-null
+	const input = null;
 	const result = attempt(operationA, input);
 
-	expect(result).toBeUndefined();
+	expect(result).toBeNull();
 });
 
 test('attempt operation on undefined input', () => {
 	const input = undefined;
 	const result = attempt(operationA, input);
 
-	expect(result).toBeUndefined();
+	expect(result).toBeNull();
 });
 
 test('attempt operation on defined input with one additional function parameter', () => {
