@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/growthops-digital/ext-ts/compare/v3.3.7...v3.4.0) (2023-05-09)
+
+
+### Features
+
+* add pending state to result ([15c038f](https://github.com/growthops-digital/ext-ts/commit/15c038f9263e3eea4c0f463339dee25f54a988b8))
+
 ### [3.3.7](https://github.com/growthops-digital/ext-ts/compare/v3.3.6...v3.3.7) (2023-02-07)
 
 ### [3.3.6](https://github.com/growthops-digital/ext-ts/compare/v3.3.5...v3.3.6) (2023-02-07)
