@@ -1,3 +1,7 @@
+type Pending = {
+	type: 'pending';
+};
+
 type Success<T> = {
 	type: 'success';
 	data: T;
@@ -9,11 +13,17 @@ type Failure = {
 	data?: unknown;
 };
 
-type Result<T> = Failure | Success<T>;
+type Result<T> = Failure | Pending | Success<T>;
+
+const isPending = <T>(result: Result<T>): result is Pending => result.type === 'pending';
 
 const isSuccess = <T>(result: Result<T>): result is Success<T> => result.type === 'success';
 
 const isFailure = <T>(result: Result<T>): result is Failure => result.type === 'failure';
+
+const pending = (): Pending => ({
+	type: 'pending',
+});
 
 const success = <T>(data: T): Success<T> => ({
 	type: 'success',
@@ -44,8 +54,10 @@ const resultFromPromise = async <T, J>(
 };
 
 export {
+	isPending,
 	isSuccess,
 	isFailure,
+	pending,
 	success,
 	failure,
 	resultFromPromise,
@@ -53,6 +65,7 @@ export {
 
 export type {
 	Result,
+	Pending,
 	Success,
 	Failure,
 };

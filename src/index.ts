@@ -21,4 +21,4 @@ export type {Collapsible} from './collapse';
 export type {Emptiable} from './is-empty';
 export type {AspectRatio} from './aspect-ratios';
 export type {Optional} from './types/optional';
-export type {Result, Success, Failure} from './result';
+export type {Result, Pending, Success, Failure} from './result';

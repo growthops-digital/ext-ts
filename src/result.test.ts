@@ -1,7 +1,19 @@
 import {identity} from 'remeda';
 import {expect, test} from '@jest/globals';
-import {success, failure, isFailure, isSuccess, resultFromPromise} from './result';
-import type {Success, Failure} from './result';
+import {pending, success, failure, isPending, isFailure, isSuccess, resultFromPromise} from './result';
+import type {Pending, Success, Failure} from './result';
+
+test('pending function creates correct data structure', () => {
+	const result = pending();
+
+	const expected: Pending = {
+		type: 'pending',
+	};
+
+	expect(isPending(result)).toBe(true);
+
+	expect(result).toEqual(expected);
+});
 
 test('success function creates correct data structure', () => {
 	const result = success({foo: 'bar'});
