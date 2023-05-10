@@ -15,7 +15,7 @@ export {default as notPopulated} from './not-populated';
 export {default as replace} from './replace';
 export {default as trim} from './trim';
 export {default as useOnScreen} from './use-on-screen';
-export {isSuccess, isFailure, success, failure, resultFromPromise} from './result';
+export {isPending, isSuccess, isFailure, pending, success, failure, resultFromPromise} from './result';
 
 export type {Collapsible} from './collapse';
 export type {Emptiable} from './is-empty';
